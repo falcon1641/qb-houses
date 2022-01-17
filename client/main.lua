@@ -421,8 +421,34 @@ local function getDataForHouseTier(house, coords)
         [3] = function(coords) return exports['qb-interior']:CreateTrevorsShell(coords) end,
         [4] = function(coords) return exports['qb-interior']:CreateCaravanShell(coords) end,
         [5] = function(coords) return exports['qb-interior']:CreateLesterShell(coords) end,
-        [6] = function(coords) return exports['qb-interior']:CreateRanchShell(coords) end
-    }
+        [6] = function(coords) return exports['qb-interior']:CreateRanchShell(coords) end,
+	[7] = function(coords) return exports['qb-interior']:CreateWarehouse1(coords) end,
+        [8] = function(coords) return exports['qb-interior']:CreateWarehouse2(coords) end,
+        [9] = function(coords) return exports['qb-interior']:CreateWarehouse3(coords) end,
+        [10] = function(coords) return exports['qb-interior']:CreateHighend1(coords) end,
+        [11] = function(coords) return exports['qb-interior']:CreateHighend2(coords) end,
+        [12] = function(coords) return exports['qb-interior']:CreateHighend3(coords) end,
+	[13] = function(coords) return exports['qb-interior']:CreateHighend(coords) end,
+        [14] = function(coords) return exports['qb-interior']:CreateHighendV2(coords) end,
+        [15] = function(coords) return exports['qb-interior']:CreateMichael(coords) end,
+        [16] = function(coords) return exports['qb-interior']:CreateOffice2(coords) end,
+        [17] = function(coords) return exports['qb-interior']:CreateOfficeBig(coords) end,
+        [18] = function(coords) return exports['qb-interior']:CreateBarber(coords) end,	
+	[19] = function(coords) return exports['qb-interior']:CreateGunstore(coords) end,
+        [20] = function(coords) return exports['qb-interior']:CreateStore1(coords) end,
+        [21] = function(coords) return exports['qb-interior']:CreateStore2(coords) end,
+        [22] = function(coords) return exports['qb-interior']:CreateStore3(coords) end,
+        [23] = function(coords) return exports['qb-interior']:CreateFranklinAunt(coords) end,
+        [24] = function(coords) return exports['qb-interior']:CreateMedium2(coords) end,	
+	[25] = function(coords) return exports['qb-interior']:CreateMedium3(coords) end,
+        [26] = function(coords) return exports['qb-interior']:CreateCoke(coords) end,
+        [27] = function(coords) return exports['qb-interior']:CreateCoke2(coords) end,
+        [28] = function(coords) return exports['qb-interior']:CreateMeth(coords) end,
+        [29] = function(coords) return exports['qb-interior']:CreateWeed2(coords) end,
+        [30] = function(coords) return exports['qb-interior']:CreateGarageLow(coords) end,
+	[31] = function(coords) return exports['qb-interior']:CreateGarageMed(coords) end,
+        [32] = function(coords) return exports['qb-interior']:CreateGarageHigh(coords) end
+        
 
     if not shells[houseTier] then
         QBCore.Functions.Notify(Lang:t("error.invalid_tier"), 'error')
